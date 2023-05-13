@@ -27,7 +27,7 @@ Library used::(a) bootstrap for styling...
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-![Screenshot (606)](https://user-images.githubusercontent.com/113850768/233931622-f48bbf27-8f0b-4c39-933c-4cf26c5f683b.png)
+
 
 ## Available Scripts
 

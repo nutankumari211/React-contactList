@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 const Add = () => {
-
+    // State variables for name, email, and number
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
 
+    // Get contacts from the Redux store
     const contacts = useSelector(state => state);
 
     const dispatch = useDispatch();
@@ -17,21 +18,27 @@ const Add = () => {
     const handelSubmit = e => {
         e.preventDefault();
 
-        const checkEmail = contacts.find(contact => contact.email === email && email)
-        const checkNumber = contacts.find(contact => contact.number === parseInt(number) && number)
+        // Check if email already exists
+        const checkEmail = contacts.find(contact => contact.email === email && email);
+        // Check if number already exists
+        const checkNumber = contacts.find(contact => contact.number === parseInt(number) && number);
 
+        // Validate input fields
         if (!email || !number || !name) {
             return toast.warning("Please fill in all fields!");
         }
 
+        // Check for existing email
         if (checkEmail) {
-            return toast.error("This email already Exists!");
+            return toast.error("This email already exists!");
         }
 
+        // Check for existing number
         if (checkNumber) {
-            return toast.error("This number already Exists!");
+            return toast.error("This number already exists!");
         }
 
+        // Create new contact object
         const data = {
             id: contacts[contacts.length - 1].id + 1,
             name,
@@ -39,8 +46,9 @@ const Add = () => {
             number
         }
 
+        // Dispatch action to add contact
         dispatch({ type: 'ADD_CONTACT', payload: data });
-        toast.success("Contact added successfully!!")
+        toast.success("Contact added successfully!!");
         navigate('/');
     };
 
@@ -69,7 +77,7 @@ const Add = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Add;

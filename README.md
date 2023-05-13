@@ -13,13 +13,6 @@ Library used::(a) bootstrap for styling...
               (d) react-redux
               (e) react-router-dom
               (f) react-toastify
-![Screenshot (604)](https://user-images.githubusercontent.com/113850768/233931570-c5850620-ac9d-483e-8490-5e69c025f4c7.png)
-![Screenshot (605)](https://user-images.githubusercontent.com/113850768/233931585-18b70419-61e7-4bc6-9453-bd04ea8f8cae.png)
-
-![Screenshot (607)](https://user-images.githubusercontent.com/113850768/233931691-75d3d119-8cf5-4bea-85cc-5dd7d9e35e25.png)
-![Screenshot (608)](https://user-images.githubusercontent.com/113850768/233931715-3b0a4876-a13e-45bd-b926-9a9dd153be0e.png)
-
-![Screenshot (609)](https://user-images.githubusercontent.com/113850768/233931737-f19c4f34-dfa1-48a4-b879-244365fc7578.png)
 
 # Getting Started with Create React App
 

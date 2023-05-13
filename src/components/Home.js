@@ -18,30 +18,31 @@ const Home = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col-md-12 my-5 text-end'>
-                    <Link to='/add' className='btn btn-outline-dark'>Add Contact</Link>
+                  <span className='add-button'> Click To Add Contacts</span>  <Link to='/add' className='btn btn-primary btn-lg '>Add Contact &nbsp;
+                  <i className="fa-solid fa-arrow-right"></i>&nbsp;<i className="fa-solid fa-arrow-right"></i></Link>
                 </div>
                 <div className='col-md-10 mx-auto'>
-                    <table className='table table-hover'>
-                        <thead className='text-white bg-dark text-center'>
+                    <table className='table-hover table table-hover table-success'>
+                        <thead className='table-light text-center'>
                             <tr>
                                 <th scope='col'>#</th>
                                 <th scope='col'>Name</th>
-                                <th scope='col'>Email</th>
-                                <th scope='col'>Number</th>
+                                <th scope='col'><i className="fa-solid fa-at"></i>Email</th>
+                                <th scope='col'><i className="fa-solid fa-phone"></i> Number</th>
                                 <th scope='col'>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             {
                                 contacts.map((contact, id) => (
-                                    <tr key={id}>
+                                    <tr className='row-name' key={id}>
                                         <td>{id + 1}</td>
-                                        <td>{contact.name}</td>
+                                        <td >{contact.name}</td>
                                         <td>{contact.email}</td>
                                         <td>{contact.number}</td>
                                         <td>
-                                            <Link to={`/edit/${contact.id}`} className='btn btn-small btn-primary me-2'>Edit</Link>
-                                            <button type='button' onClick={() => deleteContact(contact.id)} className='btn btn-small btn-danger'>Delete</button>
+                                            <Link to={`/edit/${contact.id}`} className='btn btn-info me-2'><i className="fa-solid fa-pen-to-square"></i></Link>
+                                            <button type='button' onClick={() => deleteContact(contact.id)} className="button btn btn-primary"><i className="fa-solid fa-trash"></i></button>
                                         </td>
                                     </tr>
                                 ))

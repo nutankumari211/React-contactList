@@ -1,6 +1,6 @@
 # React-contactList
 
-#HOSTED LINK :: 
+#HOSTED LINK :: https://sage-figolla-859b96.netlify.app/
 
 # HOW TO RUN THE PROJECT
 

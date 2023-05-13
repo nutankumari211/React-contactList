@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Hoisting Link ::
 
 App Name:: Contact reactApp
@@ -91,3 +92,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# React-contactList
+>>>>>>> a93660a9b7ca34b00c6f856a9d62749696b8e18c
